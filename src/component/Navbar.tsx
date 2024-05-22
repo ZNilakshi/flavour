@@ -92,8 +92,8 @@ const Navbar = () => {
               
               <ul className="flex items-center space-x-4">
               <li>
-                 <Link href="/profile">
-                  <a className="hover:underline">{session.user?.email}</a>
+                 <Link href="/profile"
+              className="hover:underline">{session.user?.email}
                 </Link>
               
               </li>
@@ -112,7 +112,7 @@ const Navbar = () => {
                   fontSize: '18px',
                   fontFamily:'oldenburg',
                 }}
-                  onClick={() => {
+                  onClick = {() => {
                     signOut();
                   }}
                    >
