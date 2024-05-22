@@ -1,0 +1,45 @@
+/* src/component/Footer.module.css */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #e7e7e7;
+    text-align: center;
+  }
+  
+  .logo {
+    flex: 1;
+    margin-bottom: 20px;
+    margin-left: 250px;
+  }
+  
+  .links {
+    flex: 2;
+    margin-top: 20px;
+  }
+  
+  .links table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .links td {
+    padding: 5px;
+  }
+  
+  .links a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  .hrLine {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin-bottom: 20px;
+  }

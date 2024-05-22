@@ -1,11 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Oldenburg&display=swap');
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+}
+/* styles/globals.css */
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('/fonts/MyCustomFont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;}
+
+.oldenburg-regular {
+  font-family: "Oldenburg", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,6 +29,7 @@
 }
 
 body {
+  font-family: 'Oldenburg', sans-serif; /* Google Font */
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -30,4 +43,7 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+.custom-font {
+  font-family: 'MyCustomFont', sans-serif; /* Custom Font */
 }

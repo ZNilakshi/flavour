@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
+import Image from 'next/image';
+
 
 const Register = () => {
   const [error, setError] = useState("");
@@ -61,49 +63,64 @@ const Register = () => {
   }
   return (
     sessionStatus !== "authenticated" && (
-      <div className="flex min-h-screen items-center justify-center p-24">
-        <div className="container mx-auto flex">
-          <div className="flex-1 flex justify-center">
-            <img
-              src="/images/log.JPG"
-              alt="Register Image"
-              className="w-full h-full object-cover"
-            />
+      <div className="flex min-h-screen items-center justify-center bg-gray-100 p-8">
+      <div className="flex bg-white rounded-lg shadow-lg overflow-hidden">
+      <div className="hidden md:block md:w-1/2">
+          
+          <Image
+            src="/images/log.JPG" // Replace with the path to your image
+            alt="Login Photo"
+            width={300}
+            height={180}
+            className="object-cover w-full h-full"
+          />
           </div>
-          <div className="flex-1 p-8">
-            <h1 className="text-4xl text-center font-semibold mb-8">
+          <div className="bg-[white] p-8 rounded shadow-md w-96">
+        <div className="flex justify-center ">
+    <Image src="/images/logo.png" alt="Logo" width={180} height={180} />
+  </div>
+            <h1 className=" font-Oldenburg text-4xl text-center font-semibold mb-8">
               Register
             </h1>
             <form onSubmit={handleSubmit} className="space-y-4">
+            <div className="flex justify-center">
               <input
                 type="text"
-                className="w-full border border-gray-300 text-black rounded px-3 py-2 focus:outline-none focus:border-blue-400 focus:text-black"
+                className="w-64 border border-gray-300 text-black rounded px-2 py-2 mb-4 focus:outline-none focus:border-blue-400 focus:text-black text-sm"
                 placeholder="Email"
                 required
               />
+             </div>
+             <div className="flex justify-center">
               <input
                 type="password"
-                className="w-full border border-gray-300 text-black rounded px-3 py-2 focus:outline-none focus:border-blue-400 focus:text-black"
+                className="w-64 border border-gray-300 text-black rounded px-2 py-2 mb-4 focus:outline-none focus:border-blue-400 focus:text-black text-sm"
                 placeholder="Password"
                 required
               />
+              </div>
+               <div className="flex justify-center">
               <button
                 type="submit"
-                className="w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600"
+                className="w-50 font-Oldenburg  bg-orange-500 text-white py-2 rounded-4 hover:bg-gray-600 text-sm"
               >
-                Register
+                Connect
               </button>
-              <p className="text-red-600 text-[16px]">{error && error}</p>
+              </div>
+              <p className=" font-Oldenburg text-red-600 text-[16px]">{error && error}</p>
             </form>
-            <div className="text-center text-gray-500 mt-4">-OR-</div>
+            <div className="flex justify-center">
+            <div className=" text-center text-gray-500 mt-2 text-sm">--OR--</div>
+            </div>
             <Link
               href="/login"
-              className="block text-center text-blue-500 hover:underline mt-2"
+              className=" font-Oldenburg block text-center text-blue-500 hover:underline mt-3 text-sm"
             >
               Login with existing account
             </Link>
-          </div>
+          
         </div>
+      </div>
       </div>
     )
   );
