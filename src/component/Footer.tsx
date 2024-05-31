@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.logo}>
-        <Image src="/images/logo.png" alt="Logo" width={100} height={100} />
+        <Image src="/images/logo.png" alt="Logo" width={200} height={200} />
       </div>
       <hr className={styles.hrline} />
       <div className={styles.links}>

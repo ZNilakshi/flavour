@@ -12,7 +12,8 @@
   .logo {
     flex: 1;
     margin-bottom: 20px;
-    margin-left: 250px;
+    margin-left: 200px;
+    margin-right:10px;
   }
   
   .links {
