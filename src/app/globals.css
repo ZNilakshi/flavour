@@ -8,11 +8,7 @@
   --background-end-rgb: 255, 255, 255;
 }
 /* styles/globals.css */
-@font-face {
-  font-family: 'MyCustomFont';
-  src: url('/fonts/MyCustomFont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;}
+
 
 .oldenburg-regular {
   font-family: "Oldenburg", serif;
@@ -45,5 +41,5 @@ body {
   }
 }
 .custom-font {
-  font-family: 'MyCustomFont', sans-serif; /* Custom Font */
+  font-family: 'Oldenburg', sans-serif; /* Custom Font */
 }
