@@ -32,14 +32,14 @@ const ChatBox = () => {
           type="text"
           value={ingredient1}
           onChange={(e) => setIngredient1(e.target.value)}
-          className="w-1/2 p-2 border rounded"
+          className=" text-sm w-1/2 p-2 border rounded"
           placeholder="Ingredient 1"
         />
         <input
           type="text"
           value={ingredient2}
           onChange={(e) => setIngredient2(e.target.value)}
-          className="w-1/2 p-2 border rounded"
+          className=" text-sm w-1/2 p-2 border rounded"
           placeholder="Ingredient 2"
         />
       </div>
@@ -48,7 +48,7 @@ const ChatBox = () => {
           type="text"
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          className="flex-grow p-2 border rounded-l"
+          className="text-sm flex-grow p-2 border rounded-l"
           placeholder="Type your message..."
         />
         <button onClick={handleSend} className="p-2 bg-[#FF6347] text-white rounded-r">Send</button>
