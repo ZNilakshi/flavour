@@ -1,0 +1,92 @@
+/* DeleteAccount.css */
+
+.delete-account-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.confirmation-box {
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.confirmation h2,
+.confirmation-modal h2 {
+  margin-top: 0;
+}
+
+.confirmation p,
+.confirmation-modal p {
+  margin-bottom: 15px;
+}
+
+.confirm-button,
+.delete-button,
+.no-button,
+.cancel-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.confirm-button,
+.no-button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+}
+
+.confirm-button:hover,
+.no-button:hover {
+  background-color: #45a049;
+}
+
+.confirmation-modal {
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.modal-content {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.delete-button {
+  background-color: #ccc;
+  color: #000;
+  border: none;
+  margin-right: 10px; 
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  color: #333;
+  border: none;
+}
+
+.cancel-button:hover {
+  background-color: #5f5e5e;
+}

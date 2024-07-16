@@ -1,9 +1,12 @@
 "use client"; 
-import React from 'react';
-import styles from './profile.module.css';
-import { useRouter } from 'next/navigation';
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useSession } from "next-auth/react";
+import Image from 'next/image';
+import { Route } from "react-router-dom";
 
-const Profile = ({ currentPage }) => {
+const Profile = ({ }) => {
   const router = useRouter();
 
   const handleAddChefClick = () => {
@@ -41,23 +44,26 @@ const Profile = ({ currentPage }) => {
         backgroundColor: 'gray',
         borderRadius: '30px',
         padding: '20px',
-      }}>
+      }}> 
+      <a href="/ProfileEdit">
         <img
-          src="/images/user.png" // Replace with actual photo URL
+          src="/images/user.png" 
           alt="Profile"
           style={{
             width: '55px',
             height: '55px',
+            animation:'paused',
             marginBottom: '10px',
             borderRadius: '10px',
             objectFit: 'cover',
           }}
           onClick={() => {}}
-        />
+        /> 
+        </a>
+        <a href="/ChefRegister">
         <img
-          src="/images/add.png" // Replace with actual photo URL
+          src="/images/add.png" 
           alt="Chef"
-          onClick={handleAddChefClick}
           style={{
             width: '55px',
             height: '55px',
@@ -66,11 +72,13 @@ const Profile = ({ currentPage }) => {
             objectFit: 'cover',
             cursor: 'pointer',
           }}
+          onClick={() => {}}
         />
+        </a>
+        <a href="/DeleteAccount">
         <img
-          src="/images/setting.png" // Replace with actual photo URL
+          src="/images/setting.png" 
           alt="Settings"
-          onClick={handleSettingsClick}
           style={{
             width: '55px',
             height: '55px',
@@ -78,7 +86,9 @@ const Profile = ({ currentPage }) => {
             objectFit: 'cover',
             cursor: 'pointer',
           }}
+          onClick={() => {}}
         />
+        </a>
       </div>
       <div style={{
         flex: 1.5,
@@ -94,6 +104,7 @@ const Profile = ({ currentPage }) => {
           borderRadius: '30px',
           overflow: 'hidden',
         }}>
+        
           <img
             src="/images/log.jpg"
             alt="Made by You"
@@ -106,7 +117,6 @@ const Profile = ({ currentPage }) => {
               cursor: 'pointer',
               filter: 'blur(2px)',
             }}
-           
           />
           <div style={{
             position: 'absolute',
@@ -118,9 +128,11 @@ const Profile = ({ currentPage }) => {
             cursor: 'pointer',
            
           }}>
+            <a href="/Made-by-you">
             <p
-            onClick={handleMadeByYouClick}
+            onClick={() => {}}
              >Made by You</p>
+             </a>
           </div>
         </div>
         <div style={{
