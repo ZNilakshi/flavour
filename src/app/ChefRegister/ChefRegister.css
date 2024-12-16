@@ -1,0 +1,90 @@
+.profile-container {
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  background: #d4e7e8;
+}
+
+.profile-sidebar {
+  width: 200px;
+  background: #d4e7e8;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.profile-main {
+  flex: 1;
+  padding: 20px;
+}
+
+.basic-info{
+  font-size: 20px;
+}
+
+.about-me {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+
+::placeholder {
+  color: #999; 
+  font-size: 16px;
+}
+
+textarea {
+  height: 150px; 
+}
+
+.btn {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px; 
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+.bio {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}

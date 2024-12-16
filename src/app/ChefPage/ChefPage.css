@@ -1,0 +1,128 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .chef-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ff6347;
+    display: inline-block;
+  }
+  
+  .chef-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .chef-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 400px;  
+    overflow: hidden;
+    text-align: left;
+    padding: 15px;
+  }
+  
+  .chef-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .chef-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 15px;
+  }
+  
+  .chef-details {
+    flex-grow: 1;
+  }
+  
+  .chef-details h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .chef-details p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .follow-btn {
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    float: right;
+  }
+  
+  .follow-btn:hover {
+    background-color: #ff4500;
+  }
+  
+  .recipes {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .recipe {
+    margin: 0 10px;
+    text-align: center;
+  }
+  
+  .recipe-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+  
+  .recipe-details {
+    margin-top: 10px;
+  }
+  
+  .recipe-details h4 {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .recipe-stats {
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .view-all-recipes-btn {
+    background-color: #ff6347;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .view-all-recipes-btn:hover {
+    background-color: #ff4500;
+  }
+  

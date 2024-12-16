@@ -1,0 +1,16 @@
+/* navbar.module.css */
+.navbar {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .nav-link {
+    color: #fff;
+  }
+  
+  /* Style for the icons */
+  .nav-link i {
+    margin-right: 5px; /* Adjust spacing between icon and text */
+  }
+  
+  

@@ -1,0 +1,70 @@
+/* styles/register.module.css */
+.container {
+    display: flex;
+    width: 625px;
+    height: 505px;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  .left {
+    flex: 1;
+    background-image: url('log.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  .right {
+    flex: 1;
+    background-color: #fff;
+    color: #380e0e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  .logo {
+    height: 110px;
+    width: auto;
+    margin-top: 65px;
+  }
+  
+  .content {
+    text-align: center;
+    padding: 5px;
+    color: #696561;
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+  
+  input,
+  .btn {
+    width: 200px;
+    height: 34px;
+    padding: 12px;
+    border-radius: 5px;
+    margin: 5px 0;
+    opacity: 0.85;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 20px;
+    text-decoration: none;
+    border-color: #696561;
+  }
+  
+  input:hover,
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  /* Add other styles as needed */
+  
